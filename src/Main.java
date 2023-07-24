@@ -5,8 +5,7 @@ public class Main {
                 new Warrior(200, 15, "CRITS")};
         for (Hero hero : heroes) {
             hero.applySuperAbility();
-            if (hero instanceof Medic) {
-                Medic medic = (Medic) hero;
+            if (hero instanceof Medic medic) {
                 medic.increaseExperience();
                 System.out.println("Medic increase his healing power. Current value: " + medic.healPoints);
             }
